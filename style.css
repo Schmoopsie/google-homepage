@@ -1,25 +1,28 @@
-ul.header{
-    padding-left: 10px;
-    margin-bottom: 10px;
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 header{
-    background-color: #dddddd;
     position: fixed;
     top: 0;
     width: 100%;
-    padding-left: 20px;
-    margin-left: -20px;
-    overflow: hidden;
+    left: 0;
+    right: 0;
+    padding-top: 10px;
 }
+
 li.left{
     left: 0;
     text-align: left;
     float: left;
+    padding-left: 20px;
 }
 li.right{
     right: 0;
     text-align: right;
     float: right;
+    padding-right: 20px;
 }
 body {
     font-family: arial, sans-serif;
@@ -30,26 +33,22 @@ body {
 }
 
 ul.footer{
-    background-color: #dddddd;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     left: 0;
     padding-left: 15px;
     display: inline-block;
-    text-align: left;
+    background-color: #eeeeee;
+    padding: 0px;
+    
 }
 
 li:hover{
-    background-color: #bbbbbb;
+    text-decoration: underline;
 }
 li{
     display: inline-block;
     padding: 5px;
-    margin-right: 10px;
 }
-
-
 
 .searchbar{
     margin-top: 0;
@@ -70,7 +69,6 @@ li{
     padding-left: 15px;
     padding-top: 5px;
     color: rgba(0,0,0,.87);
-    word-wrap: break-word;
     outline: none;
     display: flex;
     flex: 100%;
@@ -96,7 +94,17 @@ input[type='submit']{
 }
 
 footer{
+    background-color: #eeeeee;
+    float: bottom;
+    position: fixed;
+    width: 100%;
     font-size: 13px;
-    line-height: 40px;
-    padding: 27px;
-}
+    line-height: 0;
+    bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid #dfdfdf;
+} 
